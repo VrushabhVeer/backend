@@ -4,7 +4,7 @@ const userRouter = Router();
 
 userRouter.post("/register", async (req, res) => {
   try {
-    const { name, email,  userName, contact, photo } = req.body;
+    const { name, email, userName, contact, photo } = req.body;
 
     const user = new UserModel({
       name,
